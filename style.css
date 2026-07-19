@@ -1,0 +1,73 @@
+/* ================================================================
+   VARIABLES & THÈMES
+   ================================================================ */
+:root {
+  --color-bg: #0A0A0F;
+  --color-bg-alt: #111118;
+  --color-surface: #1A1A24;
+  --color-surface-hover: #252533;
+  --color-text: #EAEAEF;
+  --color-text-muted: #8888A0;
+  --color-text-light: #B0B0C4;
+  
+  --color-primary: #FF6B35;
+  --color-primary-dark: #E55A2B;
+  --color-primary-light: #FF8A5C;
+  --color-secondary: #00D4FF;
+  
+  --gradient-main: linear-gradient(135deg, #FF6B35 0%, #FF8A5C 50%, #FFB347 100%);
+  --gradient-hero: linear-gradient(135deg, #FF6B35 0%, #00D4FF 100%);
+  
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 40px rgba(255, 107, 53, 0.15);
+  
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+  
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ================================================================
+   RESET & BASE
+   ================================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
